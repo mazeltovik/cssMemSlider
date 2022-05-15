@@ -1,2 +1,138 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: flex;
+    background: #5d5676;
+  }
+  
+  .wrapper{
+    margin: 0px auto;
+    padding: 40px 0;
+  }
+  
+  input[type=radio] {
+    display: none;
+  }
 
+  
+  #button1:checked ~ .slides .slides-wrap {
+    transform: translateX(0);
+  }
+  #button1:checked ~ .flex-dots .dots>label:nth-child(1) {
+    background: none;
+  }
+  
+  
+  #button2:checked ~ .slides .slides-wrap{
+    transform: translateX(-25%);
+  }
+  #button2:checked ~ .flex-dots .dots>label:nth-child(2) {
+    background: none;
+  }
+  
+  #button3:checked ~ .slides .slides-wrap {
+    transform: translateX(-50%);
+  }
+  #button3:checked ~ .flex-dots .dots>label:nth-child(3) {
+    background: none;
+  }
+  
+  #button4:checked ~ .slides .slides-wrap {
+    transform: translateX(-75%);
+  }
+  #button4:checked ~ .flex-dots .dots>label:nth-child(4) {
+    background: none;
+  }
+  
+  
+  .slides {
+    width: 50vw;
+    overflow: hidden;
+    background: black;
+    border-radius: 8px;
+  }
+  
+  .slides-wrap {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 400%;
+    max-height: 800px;
+    overflow: hidden;
+    list-style-type: none;
+    transition: all 0.3s ease-out;
+  }
+  
+  .slide {
+    /* position: relative; */
+    width: 25%;
+    /* float: left; */
+    margin: 0;
+    padding: 0;
+  }
+  .slide img {
+    vertical-align: bottom;
+    width: 100%;
+  }
+  
+  .dots {
+    margin: 0px 0;
+    text-align: center;
+  }
+  .dots label {
+    display: inline-block;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    margin-right: 3px;
+    background: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+  }
+
+  .dots label:hover{
+    background: grey;
+  }
+  
+
+  
+
+  .dots label:last-child {
+    margin-right: 0;
+  }
+
+  .flex-dots{
+    width: 50vw;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+
+  .texts {
+    width: 350px;
+    overflow: hidden;
+  }
+  
+  .text-wrap {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 400%;
+    overflow: hidden;
+    list-style-type: none;
+    transition: all 0.3s ease-out;
+  }
+
+  .text {
+    /* position: relative; */
+    width: 25%;
+    /* float: left; */
+    margin: 0;
+    padding: 0;
+    color:white;
+  }
  
