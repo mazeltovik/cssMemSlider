@@ -136,3 +136,18 @@ body {
     color:white;
   }
  
+  #button1:checked ~ .flex-dots .texts .text-wrap {
+    transform: translateX(0%);
+  }
+
+  #button2:checked ~ .flex-dots .texts .text-wrap {
+    transform: translateX(-25%);
+  }
+
+  #button3:checked ~ .flex-dots .texts .text-wrap {
+    transform: translateX(-50%);
+  }
+
+  #button4:checked ~ .flex-dots .texts .text-wrap {
+    transform: translateX(-75%);
+  }
