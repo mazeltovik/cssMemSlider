@@ -151,3 +151,20 @@ body {
   #button4:checked ~ .flex-dots .texts .text-wrap {
     transform: translateX(-75%);
   }
+
+  @media (min-width: 320px) and (max-width: 874px) {
+    body{
+      align-items: flex-start;
+    }
+    .slides{
+      width:80vw;
+    }
+    .flex-dots{
+      gap:1rem;
+      width: 80vw;
+      flex-direction: column-reverse;
+    }
+    .texts{
+      width: 250px;
+    }
+  }
